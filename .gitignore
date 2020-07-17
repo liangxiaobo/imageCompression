@@ -2,6 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
+output
+*.jpg
+*.png
+.vscode/
 
 # C extensions
 *.so
