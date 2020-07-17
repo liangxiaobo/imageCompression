@@ -1,4 +1,4 @@
-# imageCompression 可自动压缩图片的python脚本
+# imageCompression 可自动无损压缩图片的python脚本
 脚本使用Pillow处理压缩, **当前脚本只支持jpg,png格式的，后续继续完善**
 
 脚本执行示例：
@@ -78,3 +78,8 @@ image-21-1536x787.png 压缩前： 764KB 压缩后： 140KB
 image-11-2048x1062.png 压缩前： 1.05MB 压缩后： 86KB
 ----------------------------------------------------------------------
 ```
+压缩前 3.7MB
+![压缩前](https://github.com/liangxiaobo/imageCompression/blob/master/%E5%8E%8B%E7%BC%A9%E5%89%8D.jpg)
+压缩后 346KB
+![压缩后](https://github.com/liangxiaobo/imageCompression/blob/master/%E5%8E%8B%E7%BC%A9%E5%90%8E.jpg)
+
