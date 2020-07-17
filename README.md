@@ -5,7 +5,7 @@
 ```
 test.py [-i <imgs>] [-q <quality>] [-s <subsampling>] [-j <jpga>] [-d <dir>]
 ```
-* -i，--imgs手动指定一张或多张图片压缩，以逗号分隔 a.jpg,b.jpg,c.png
+* -i，--imgs手动指定一张或多张图片压缩，以逗号分隔 "a.jpg,b.jpg,c.png"
 * -q, --quality 默认压缩的图片质量为15，可以调整0-95
 * -j, --jpga 为1时设置将图片统计转换成.jpg格式，默认为0
 * -d, --dir 设置一个目录，压缩指定目录下的图片，当指定-d时，-i不生效
