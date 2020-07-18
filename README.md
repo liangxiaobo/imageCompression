@@ -83,3 +83,6 @@ image-11-2048x1062.png 压缩前： 1.05MB 压缩后： 86KB
 压缩后 346KB
 ![压缩后](https://github.com/liangxiaobo/imageCompression/blob/master/%E5%8E%8B%E7%BC%A9%E5%90%8E.jpg)
 
+> Pillow开源地址：https://github.com/python-pillow/Pillow
+> Pillow官方文档：https://www.osgeo.cn/pillow/installation.html https://pillow.readthedocs.org/
+
