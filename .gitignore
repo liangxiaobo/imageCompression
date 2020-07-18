@@ -5,6 +5,7 @@ __pycache__/
 output
 *.jpg
 *.png
+*.gif
 .vscode/
 
 # C extensions
