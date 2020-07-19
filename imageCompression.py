@@ -101,7 +101,7 @@ def dirOfImageCompress(dir, quality, subsampling, notfound_imgs, jpga, output):
 
             for filename in filenames:
                 # print('文件：', filename)
-                if filename.endswith('.jpg') or filename.endswith('.png'):
+                if filename.endswith('.jpg') or filename.endswith('.png') or filename.endswith('.JPG') or filename.endswith('.PNG'):
                     imageCompress(quality, subsampling, '{}/{}'.format(dirpath, filename), notfound_imgs, jpga, output_dir)
 
 def imageCompress(quality, subsampling, img_item, notfound_imgs, jpga, output):
@@ -110,7 +110,7 @@ def imageCompress(quality, subsampling, img_item, notfound_imgs, jpga, output):
     '''
     img_item_path= ''
     img_item_path = Path(os.path.abspath(img_item))
-    img_item_endswith = img_item.endswith('.png') or img_item.endswith('.jpg')
+    img_item_endswith = img_item.endswith('.png') or img_item.endswith('.jpg') or img_item.endswith('.JPG') or img_item.endswith('.PNG')
 
     if img_item_path.is_file() and img_item_endswith:
         # 文件存在就开始压缩
@@ -132,7 +132,7 @@ def imageCompress(quality, subsampling, img_item, notfound_imgs, jpga, output):
             return
 
         # 区别jpg、png
-        if img_item.endswith('.png'):
+        if img_item.endswith('.png') or img_item.endswith('.PNG'):
             if jpga > 0:
                 img = img.convert('RGB')
                 extension = ".jpg"
