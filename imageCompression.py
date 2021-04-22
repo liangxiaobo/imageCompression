@@ -128,7 +128,11 @@ def imageCompress(quality, subsampling, img_item, notfound_imgs, jpga, output):
         img_item_data['byteSizeBefore'] = byteSizeBefore
 
         # 只压缩大于300KB图片
-        if byteSizeBefore < 307200:
+        # if byteSizeBefore < 307200:
+        #     return
+        
+        # 只压缩大于100KB图片
+        if byteSizeBefore < 102400:
             return
 
         # 区别jpg、png
